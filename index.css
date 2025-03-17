@@ -1,0 +1,142 @@
+body {
+  margin: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  margin: 0px;
+  font-size: 32px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
+  color: #ffcc00;
+  text-shadow: 1px 1px 0px #d40000, 2px 2px 0px #b00000, 3px 3px 0px #8b0000,
+    4px 4px 0px #600000;
+}
+h4 {
+  margin: 0px;
+  font-size: 24px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
+  color: #ffcc00;
+  text-shadow: 1px 1px 0px #d40000, 2px 2px 0px #b00000, 3px 3px 0px #8b0000,
+    4px 4px 0px #600000;
+}
+
+.main-wrapper {
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffd90024;
+}
+
+.initial-section-wrapper {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.initial-section-wrapper > * {
+  margin: 0px;
+}
+
+.initial-section-heading-wrp > * {
+  margin: 0px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
+  color: #ffcc00;
+  text-shadow: 1px 1px 0px #d40000, 2px 2px 0px #b00000, 3px 3px 0px #8b0000,
+    4px 4px 0px #600000;
+}
+
+.initial-section-heading-wrp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.initial-section-wrapper > ul {
+  list-style: none;
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+  background: #ffcc00;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 4px solid #d40000;
+  border-radius: 15px;
+  box-shadow: 4px 4px 0px #8b0000;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  user-select: none;
+}
+
+.btn:active {
+  box-shadow: 2px 2px 0px #8b0000;
+  transform: translate(2px, 2px);
+}
+
+.btn:hover {
+  background: #ffd700;
+}
+
+.options-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.game-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+}
+
+.results-text {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .initial-section-wrapper > ul {
+    flex-direction: column;
+  }
+  .options-wrapper {
+    flex-direction: column;
+  }
+}
