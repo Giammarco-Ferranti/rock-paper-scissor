@@ -59,4 +59,5 @@ The game follows the classic rules of Rock, Paper, Scissors, with the option to 
 
 Install this repository and run it locally.
 To test run
-npm run test
+```bash
+  npm run test
